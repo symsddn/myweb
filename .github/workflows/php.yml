@@ -40,7 +40,7 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: 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
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
